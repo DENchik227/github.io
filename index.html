@@ -1,47 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>My test page</title>
-    <link
-      href="http://fonts.googleapis.com/css?family=Open+Sans"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <button>Change user</button>
-    <script src="./scripts/main.js" defer></script>
-    <link href="./styles/style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <h1>Mozilla is cool</h1>
-    <img
-      src="./images/firefox-icon.png"
-      alt="The Firefox logo: a flaming fox surrounding the Earth."
-    />
-    <p>At Mozilla, we’re a global community of</p>
-    <ul>
-      <li>technologists</li>
-      <li>thinkers</li>
-      <li>builders</li>
-    </ul>
-    <p>
-      working together to keep the Internet alive and accessible, so people
-      worldwide can be informed contributors and creators of the Web. We believe
-      this act of human collaboration across an open platform is essential to
-      individual growth and our collective future.
-    </p>
-    <p>
-      Read the
-      <a href="https://www.mozilla.org/en-US/about/manifesto/"
-        >Mozilla Manifesto</a
-      >
-      to learn even more about the values and principles that guide the pursuit
-      of our mission.
-    </p>
-    <p>Попытка обновить репозиторий при помощи VS Code</p>
-    <script>
-      document.write("Эта штука говорить привет");
-      console.log("Эта штука говорить привет");
-    </script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/home_style.css">
+</head>
+
+<body class="site_container">
+    
+    <header>
+        <div class="container_header">
+            <a href="./index.html" class="logo_button">Website für Konzertausflugsprogramme</a>
+            <nav>
+                <a href="./index.html">Home</a>
+                <img src="images/punkt.svg" alt="">
+                <a href="./poster.html">Poster</a>
+                <img src="images/punkt.svg" alt="">
+                <a href="./article.html">Tickets bestellen</a>
+                <img src="images/punkt.svg" alt="">
+                <a href="./contacts.html">Kontakte</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <img src="images/slider.png" alt="">
+            <div class="slider_var">
+                <div class="var2">
+                    <img src="images/slider_var2.png" alt="" class="var_photo">
+                    <span class="var_text">Oper VS Operette</span>
+                </div>
+                <div class="var2">
+                    <img src="images/slider_var3.png" alt="" class="var_photo">
+                    <span class="var_text">Antonio Vivaldi. Jahreszeiten.</span>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="header_section2">
+                <span class="header_section2_name">Poster</span>
+                <button class="event_calendar" onclick="location.href='poster.html'">
+                    <img src="images/calendar.svg" alt="">
+                    <span class="akuel_events">Alle Veranstaltungen</span>
+                </button>
+            </div>
+            <div class="event">
+                <div class="event_date">
+                    <span class="event_date_day">3</span>
+                    <span class="event_date_month">Juni</span>
+                </div>
+                <img src="images/event1.png" alt="" class="event_photo">
+                <div class="event_description">
+                    <h4 class="event_name">Antonio Vivaldi. Jahreszeiten</h4>
+                    <p class="event_add">Hommage an Frank Sinatra.</p>
+                    <div class="event_details">
+                        <div class="event_details_container1"><img src="images/music_style.svg" alt=""
+                                class="event_details_text">Jazz
+                        </div>
+                        <div class="event_details_container1"><img src="images/clock.svg" alt=""
+                                class="event_details_text">19:00
+                        </div>
+                        <div class="event_details_container2"><img src="images/age.svg" alt=""
+                                class="event_details_text">6+
+                        </div>
+                    </div>
+                </div>
+                <button class="event_button" onclick="location.href='article.html'">Ticket Bestellen</button>
+            </div>
+            <div class="event">
+                <div class="event_date">
+                    <span class="event_date_day">30 </span>
+                    <span class="event_date_month">Juni</span>
+                </div>
+                <img src="images/event2.png" alt="" class="event2_photo">
+                <div class="event_description">
+                    <h4 class="event_name">Oper VS Operette</h4>
+                    <p class="event_add">Münchner Kammerorchester Olympisches Orchester.</p>
+                    <div class="event_details">
+                        <div class="event_details_container1"><img src="images/music_style.svg" alt=""
+                                class="event_details_text">Klassisch
+                        </div>
+                        <div class="event_details_container1"><img src="images/clock.svg" alt=""
+                                class="event_details_text">19:00
+                        </div>
+                        <div class="event_details_container2"><img src="images/age.svg" alt=""
+                                class="event_details_text">6+
+                        </div>
+                    </div>
+                </div>
+                <button class="event_button" onclick="location.href='article.html'">Ticket Bestellen</button>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="news">
+                <h2 class="news_header">News</h2>
+                <div class="news_container">
+                    <div class="news1">
+                        <div class="news_info">
+                            <img src="images/news1.png" alt="">
+                            <h3 class="news_name">Verschiebungen/Absagen von Veranstaltungen</h3>
+                            <p class="news_text">11.04.2023 um 19.00 Uhr. — Konzert „Oper vs. Operette“ – ÜBERTRAGUNG nach
+                                 05.06.2023 um 19.00 Uhr.</p>
+                        </div>
+                    </div>
+                    <div class="news2">
+                        <div class="news_info">
+                            <img src="images/news2.png" alt="">
+                            <h3 class="news_name">Verschiebungen/Absagen von Veranstaltungen</h3>
+                            <p class="news_text">11.04.2023 um 19.00 Uhr. — Konzert „Oper vs. Operette“ – ÜBERTRAGUNG nach
+                                 05.06.2023 um 19.00 Uhr.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calendar">
+                <div class="article_top">
+                    <img src="images/calendar__image.png" alt="" class="calendar_img">
+                    <h3 class="calendar_text">Besichtigungstouren</h3>
+                </div>
+                <div class="article_down_left">
+                    <div class="month_selection">
+                        <h3 class="month_name">Juli</h3>
+                        <div class="month_buttons">
+                            <button class="month_button" onclick="location.href='#'">&lt;</button>
+                            <button class="month_button" onclick="location.href='#'">&gt;</button>
+                        </div>
+                    </div>
+                    <div class="article_down_right">
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">1</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">2</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">3</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">4</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">5</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">6</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">7</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">1</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">2</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">3</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">4</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">5</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">6</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">7</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">1</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">2</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">3</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">4</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">5</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">6</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">7</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">1</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">2</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">3</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">4</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">5</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">6</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">7</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">1</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">2</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">3</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">4</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">5</divbutton>
+                        <divbutton class="calendar_day_grey" onclick="location.href='#'">6</divbutton>
+                        <divbutton class="calendar_day_green" onclick="location.href='#'">7</divbutton>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="section4">
+            <div class="section4_header">
+                <span class="header_section2_name">Mehrere Ankündigungen</span>
+                <div class="event_calendar">
+                    <img src="images/calendar.svg" alt="">
+                    <span class="akuel_events">Alle Veranstaltungen</span>
+                </div>
+            </div>
+            <div class="section4_events_name">
+                <div class="event_container">
+                    <div class="event_date_small">
+                        <span class="event_date_day_small">3</span>
+                        <span class="event_date_month_smoll">Juni</span>
+                    </div>
+                    <span class="event_name_small">&laquo;Jahrhundert des Namens SINATRA&raquo;</span>
+                </div>
+                <div class="event_container">
+                    <div class="event_date_small">
+                        <span class="event_date_day_small">3</span>
+                        <span class="event_date_month_smoll">Juni</span>
+                    </div>
+                    <span class="event_name_small">&laquo;Jahrhundert des Namens SINATRA&raquo;</span>
+                </div>
+                <div class="event_container">
+                    <div class="event_date_small">
+                        <span class="event_date_day_small">3</span>
+                        <span class="event_date_month_smoll">Juni</span>
+                    </div>
+                    <span class="event_name_small">&laquo;Jahrhundert des Namens SINATRA&raquo;</span>
+                </div>
+                <div class="event_container">
+                    <div class="event_date_small">
+                        <span class="event_date_day_small">3</span>
+                        <span class="event_date_month_smoll">Juni</span>
+                    </div>
+                    <span class="event_name_small">&laquo;Jahrhundert des Namens SINATRA&raquo;</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <a href="./index.html" class="logo_button">Website für Konzertausflugsprogramme</a>
+            <div class="footer_events_container">
+                <h3 class="footer_events">Veranstaltungen</h3>
+                <div class="footer_events_names">
+                    <span>Ausflüge</span><span>Konzerte</span><span>Poster</span>
+                </div>
+            </div>
+            <div class="contacts">
+                <h3 class="footer_contacts">Kontakte</h3>
+                <div class="contacts_container">
+                    <span>Beispielstraße 123</span><span>email@example.com</span><span>(012)345-67-89</span>
+                </div>
+            </div>
+        </div>
+        <p class="site_ko">Website für Konzertausflugsprogramme</p>
+    </footer>
+</body>
+
 </html>
