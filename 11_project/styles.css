@@ -55,13 +55,10 @@
 }
 
 html {
-    width: 100vw;
     scroll-behavior: smooth;
 }
 
 body {
-    max-width: 1192px;
-    margin: 0 auto;
     background: #F8F5F0;
 }
 
