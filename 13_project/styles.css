@@ -211,8 +211,13 @@ footer {
     height: 24px;
 }
 
+.p-t-b-0 {
+    padding: 4px 4px 4px 32px !important;
+    margin: auto 0 0 auto !important;
+}
+
 /* Links */
-button {
+button, .button_imitation {
     margin: 0 auto;
     box-sizing: border-box;
     padding: 12px 32px;
@@ -229,7 +234,9 @@ button {
 }
 
 button:hover,
-button:focus {
+button:focus,
+.button_imitation:hover,
+ .button_imitation:focus {
     color: var(--main-blue);
     background-color: var(--font-color);
     border: 1px solid var(--main-blue);
@@ -378,7 +385,7 @@ h1 {
     color: #FFFFFF;
 }
 
-[href^="tel:"] {
+.tel {
     padding: 21.5px 16px 21.5px 44px;
     background: var(--light-blue) url(./imgs/receiver.svg) no-repeat 16px center;
     border-radius: 16px;
@@ -419,6 +426,7 @@ figcaption {
 
 
 .pklp {
+    width: 156px;
     margin: 8px 0;
 }
 
@@ -895,15 +903,15 @@ summary {
 }
 
 details[open] .view_reviews::before {
-    content: "Close all Reviews";
+    content: "Close 4 Reviews";
 }
 
 details[open] .view_reviews {
-    width: 224px;
+    width: 217px;
 }
 
 details[open] .view_reviews:hover {
-    width: 227px;
+    width: 220px;
 }
 
 details>summary:first-of-type {
