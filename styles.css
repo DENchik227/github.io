@@ -1,23 +1,24 @@
 body {
-    width: 100vw;
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 100px;
+    justify-items: center;
+}
+
+.span2 {    
+    grid-column-end: span 2;
+}
+
+h1 {
+    width: 100%;
     text-align: center;
-}
-
-ul {    
-    max-width: 1200px;
-    margin: 80px auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-li {
-    list-style-type: none;
+    margin-top: 80px;
 }
 
 img {
-    width: 400px;
-    margin: 50px;
+    max-width: 400px;
     border-radius: 32px;
     box-shadow: 0px 0px 50px 15px #555;
 }
