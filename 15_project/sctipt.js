@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
         articles.forEach((article, index) => {
             article.classList.toggle('selected', index === selectedIndex);
         });
-        const offset = -selectedIndex * 91;
-        document.querySelector('.section6').style.transform = `translateX(${offset}px)`;
     }
 
     rightButton.addEventListener('click', function() {
