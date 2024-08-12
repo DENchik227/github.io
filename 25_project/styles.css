@@ -208,8 +208,6 @@ td {
 [id$="rotate-button"] {
     padding: 30px;
     font-size: 48px;
-    position: relative;
-    bottom: 300px;
 }
 
 .cube:hover .front {
