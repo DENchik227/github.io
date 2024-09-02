@@ -1,0 +1,77 @@
+/* Standard settings
+----------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background: #0000;
+}
+
+:root {
+    --application_background: #121212;
+    --body_text: #E0E0E0;
+    --accents: #1E90FF;
+    --buttons: #6200EA;
+    --errors: #FF5252;
+    --success: #4CAF50;
+    --current_tasks: rgb(30, 30, 255, 0.1);
+    --planning: rgba(0, 141, 5, 0.1);
+    --unplanned_tasks: rgba(207, 0, 200, 0.1);
+    --dividing_lines: #2E2E2E;
+    --selection: #82B1FF;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: var(--application_background);
+}
+
+h1,
+h2,
+h3,
+p, a {
+    color: var(--body_text);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+header {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid var(--dividing_lines);
+    border-radius: 60px;
+    background-color: var(--application_background);
+}
+
+h1 {
+    font-weight: 500;
+}
+
+hr {
+    margin: 10px;
+    border-color: var(--dividing_lines);
+}
+
+.settings:link, .settings:visited {
+    box-sizing: border-box;
+    width: 48px;
+    height: 48px;
+    padding: 7px;
+    background: url("https://img.icons8.com/E0E0E0/32/settings--v1.png") no-repeat center center;
+    border: 1px solid var(--body_text);
+    border-radius: 10px;
+    line-height: 0;
+}
+
+.settings:hover {
+    cursor: pointer;
+}
+
+.settings:active {
+    background: rgba(224,224,224,0.1);
+}

@@ -1,0 +1,23 @@
+.settings:link,
+.settings:visited {
+    background: url("https://img.icons8.com/?size=32&id=4299&format=png&color=E0E0E0") no-repeat center center;
+}
+
+form {
+    width: 100vw;
+}
+
+input {
+    width: 100vw;
+    padding: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 42px;
+    color: var(--body_text);
+    text-align: left;
+    border: none;
+    border-bottom: 4px solid var(--dividing_lines);
+    border-radius: 0 0 60px 60px;
+    background: linear-gradient(180deg, #121212 30%, rgba(224, 224, 224, 0.07) 100%);
+    position: relative;
+}
