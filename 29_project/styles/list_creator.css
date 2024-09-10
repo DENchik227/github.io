@@ -1,0 +1,131 @@
+.settings:link,
+.settings:visited {
+    background: url("https://img.icons8.com/?size=32&id=4299&format=png&color=E0E0E0") no-repeat center center;
+}
+
+body {
+    justify-content: space-between;
+}
+
+
+fieldset {
+    box-sizing: border-box;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-bottom: 4px solid var(--application_background_custom, var(--dividing_lines));
+    border-radius: 0 0 60px 60px;
+    background: linear-gradient(180deg, #121212 30%, rgba(224, 224, 224, 0.07) 100%);
+}
+
+input{
+    padding: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: var(--text_size);
+    color: var(--body_text);
+    text-align: left;
+    border: none;
+}
+
+.custom-select {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+    background-color: var(--application_background);
+    border: 4px solid var(--application_background_custom, var(--dividing_lines));
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.select-box {
+    height: 48px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--application_background);
+    border: 4px solid var(--application_background_custom, var(--dividing_lines));
+    z-index: 1000;
+}
+
+.option {
+    padding: 5px;
+    text-align: center;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}
+
+.show {
+    display: block;
+}
+
+label {
+    display: flex;
+}
+
+.color {
+    width: 60px;
+    height: auto;
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid var(--application_background_custom, var(--dividing_lines));
+    border-radius: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    font-size: var(--text_size);
+}
+
+#file-name {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--file-name-color, #666);
+}
+
+.custom-file-upload:hover {
+    cursor: pointer;
+}
+
+textarea {
+    height: 100%;
+}
+
+.buttons {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirm {
+    width: 88px;
+    height: 88px;
+    background: url("https://img.icons8.com/?size=88&id=25534&format=png&color=4CAF50") no-repeat left bottom;
+    border: none;
+}
+
+.back-button {
+    
+    width: 88px;
+    height: 88px;
+    background: url("https://img.icons8.com/?size=88&id=23537&format=png&color=FF5252") no-repeat right bottom;
+    border: none;
+}

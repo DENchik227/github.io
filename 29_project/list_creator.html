@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/standard_styles.css" />
+    <link rel="stylesheet" href="./styles/list_creator.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="post" id="list_creator">
+      <fieldset>
+        <div class="custom-select list_ico">
+          <div class="select-box" id="selectedIcon">
+            <img
+              src="https://img.icons8.com/?size=32&id=4299&format=png&color=E0E0E0"
+              alt="Selected Icon"
+            />
+          </div>
+          <div class="options-container">
+            <div class="option" data-value="0">
+              <img
+                src="https://img.icons8.com/?size=32&id=4299&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="1">
+              <img
+                src="https://img.icons8.com/?size=32&id=4291&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="2">
+              <img
+                src="https://img.icons8.com/?size=32&id=4292&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="3">
+              <img
+                src="https://img.icons8.com/?size=32&id=4293&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="4">
+              <img
+                src="https://img.icons8.com/?size=32&id=4294&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="5">
+              <img
+                src="https://img.icons8.com/?size=32&id=4295&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="6">
+              <img
+                src="https://img.icons8.com/?size=32&id=4296&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="7">
+              <img
+                src="https://img.icons8.com/?size=32&id=4291&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="8">
+              <img
+                src="https://img.icons8.com/?size=32&id=4298&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="9">
+              <img
+                src="https://img.icons8.com/?size=32&id=4299&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+            <div class="option" data-value="10">
+              <img
+                src="https://img.icons8.com/?size=32&id=4300&format=png&color=E0E0E0"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <input class="list_name" type="text" placeholder="Название списка" />
+      </fieldset>
+      <label class="chin list_color" for="color">
+        <p>Выберите цвет списка:</p>
+        <input class="color" type="color" name="color" id="color" value="#2E2E2E" />
+      </label>
+      
+      <textarea class="list_description chin" name="list_description" id="list_description" placeholder="Опишите список. Описание видно только при редактировании списка"></textarea>
+    </form>
+    <div class="buttons"><button class="confirm" form="list_creator"></button><button class="back-button" id="back-button"></button></div>
+
+    <script src="./scripts/list_creator.js" defer></script>
+  </body>
+</html>
