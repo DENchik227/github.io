@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">Content</div>
+<button onclick="fadeOut()">Fade Out</button>
+
+<script>
+    function fadeOut() {
+        const card = document.querySelector('.card');
+        card.classList.add('fade-out');
+    }
+</script>
+<!-- -------------------------------------- -->
+<button popovertarget="mypopover">Show the popover</button>
+<div popover="auto" id="mypopover">I'm a Popover! I should animate.</div>
+<div class="animated-element"></div>
+<!-- -------------------------------------- -->
+
+<p>
+    <abbr title="National Aeronautics and Space Administration">NASA</abbr> is a U.S. government agency that is
+    responsible for science and technology related to air and space.
+  </p>
+</body>
+</html>
