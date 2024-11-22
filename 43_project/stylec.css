@@ -1,0 +1,383 @@
+/* Generals Rules---------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --first-contrast-color: #4D96A9;
+    --first-contrast-color-light: #8FE3F9;
+    --first-contrast-color-hover: #71C0D4;
+    --second-contrast-color: #855FB1;
+    --second-contrast-color-light: #D9B8FF;
+    --second-contrast-color-hover: #B18BDD;
+    --Black: #28283D;
+    --White: #FAFAFA;
+    --Graн: #87879D;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+p {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--Graн);
+}
+
+/* .red-hat-display-<uniquifier> {
+    font-family: "Red Hat Display", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  } */
+/* Main Rules---------------------------------------------------------------- */
+
+.header {
+    padding: 80px 0 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brief_description_of_the_product {
+    max-width: 540px;
+    padding-bottom: 321px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.brief_description_of_the_product::after {
+    content: url(./img/swipe_to_01.svg);
+    width: 56px;
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    bottom: 64px;
+    transform: translateX(-50%);
+}
+
+/* Main Rules---------------------------------------------------------------- */
+
+main {
+    background-image: url(./img/main_bg_left.png), url(./img/main_bg_right.png);
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+}
+
+h1 {
+    max-width: 445px;
+    margin-bottom: 34px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: var(--Black);
+}
+
+.brief_description_of_the_product p {
+    margin-bottom: 32px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+[class$="_button"] {
+    height: min-content;
+    padding: 16px 40px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--White);
+    text-decoration: none;
+    border-radius: 29px;
+    border: none;
+    outline: none;
+}
+
+[class$="_button"]:hover {
+    cursor: pointer;
+}
+
+.green_button {
+    background: var(--first-contrast-color);
+}
+
+.green_button:hover {
+    background: var(--first-contrast-color-hover);
+}
+
+.green_button span {
+    color: var(--first-contrast-color-light);
+    margin-left: 4px;
+}
+
+.purple_button {
+    background: var(--second-contrast-color);
+}
+
+.purple_button:hover {
+    background: var(--second-contrast-color-hover);
+}
+
+.purple_button span {
+    color: var(--second-contrast-color-light);
+    margin-left: 4px;
+}
+
+.advantages {
+    padding-bottom: 184px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.advantages::after {
+    content: url(./img/swipe_to_02.svg);
+    width: 56px;
+    height: 140px;
+    position: absolute;
+    left: 50%;
+    bottom: -28px;
+    transform: translateX(-50%);
+}
+
+.photos {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.photos+p {
+    margin-bottom: 16px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--first-contrast-color);
+}
+
+h2 {
+    max-width: 445px;
+    margin-bottom: 32px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+    color: var(--Black);
+}
+
+.advantages p:last-child {
+    max-width: 540px;
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: var(--Graн);
+}
+
+/* Footer Rules------------------------------------------------------ */
+
+footer {
+    padding: 116px 0;
+    background: url(./img/footer_bg.png) no-repeat;
+    background-size: 100% 100%;
+    overflow-x: hidden;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 92px;
+    row-gap: 32px;
+}
+
+footer h2 {
+    margin: 0;
+    text-align: left;
+    color: var(--White);
+}
+
+footer p {
+    max-width: 350px;
+    margin-left: 33px;
+    text-align: left;
+    color: var(--White);
+}
+
+/* Responsive Rules----------------------------------------------------- */
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    .header {
+        padding: 48px 0 64px;
+    }
+
+    .brief_description_of_the_product {
+        padding-top: 375px;
+        padding-bottom: 287px;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .brief_description_of_the_product::after {
+        bottom: 67px;
+    }
+
+    .photos {
+        gap: 11px;
+        margin-bottom: 48px;
+    }
+
+    .photos * {
+        width: 164px;
+    }
+
+    .advantages {
+        padding-bottom: 192px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container>* {
+
+        text-align: center;
+    }
+
+    footer p {
+        max-width: 573px;
+        margin: 0 0 8px;
+    }
+}
+
+/* --------------------------------------------------------------- */
+
+@media (max-width: 760px) {
+    main {
+        background-size: 50%;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+        padding: 0 40px;
+    }
+
+    .header {
+        padding: 48px 0 54px;
+    }
+
+    .brief_description_of_the_product {
+        padding-top: calc(50vw + 48px);
+        padding-bottom: 268px;
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 44px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        line-height: 26px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buttons :last-child {
+        align-self: center;
+    }
+
+    .brief_description_of_the_product::after {
+        bottom: 64px;
+    }
+
+    .photos {
+        margin-bottom: 64px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+
+    }
+
+    .photos * {
+        width: 151px;
+    }
+
+    .photos+p {
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 36px;
+
+    }
+
+    .advantages {
+        padding-bottom: 176px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container>* {
+
+        text-align: center;
+    }
+
+    footer p {
+        max-width: 573px;
+        margin: 0 0 8px;
+    }
+
+}
