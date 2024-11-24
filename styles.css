@@ -230,9 +230,9 @@ h1 span {
 .skills::after {
     content: url(./img/ovals.svg);
     position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: translate(404px, 55px);
+    right: -404px;
+    bottom: -55px;
+    /* transform: translate(404px, 55px); */
 }
 
 .header_examples {
