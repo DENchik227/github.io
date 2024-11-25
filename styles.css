@@ -24,6 +24,10 @@ body {
     overflow-x: hidden;
 }
 
+main {
+    overflow-x: hidden;
+}
+
 .conteiner {
     max-width: 1170px;
     width: 100%;
