@@ -18,20 +18,21 @@
     --White: #FFFFFF;
 }
 
-body {
-    background-color: var(--black);
-    color: var(--White);
+html {
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
-main {
-    overflow-x: hidden;
+body {
+    width: 100vw;
+    background-color: var(--black);
+    color: var(--White);
 }
 
 .conteiner {
     max-width: 1170px;
-    width: 100%;
-    padding: 0 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -208,14 +209,6 @@ h1 span {
     filter: grayscale(100%);
 }
 
-.greetings::after {
-    content: url(./img/oval.svg);
-    position: absolute;
-    left: 85%;
-    bottom: 33%;
-    z-index: 1;
-}
-
 .hr {
     width: 1110px;
     height: 1px;
@@ -231,6 +224,19 @@ h1 span {
     margin-bottom: 140px;
     gap: 58px 30px;
     position: relative;
+}
+
+.skills_wrapper {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.skills_wrapper::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: url(.././img/ovals.svg);
+    transform: translate(75%, -50%);
 }
 
 .skill {
@@ -250,13 +256,6 @@ h1 span {
 
 .skill p {
     color: var(--Grey);
-}
-
-.skills::after {
-    content: url(./img/ovals.svg);
-    position: absolute;
-    right: -404px;
-    bottom: -55px;
 }
 
 .header_examples {
@@ -305,7 +304,7 @@ h1 span {
     align-items: center;
     position: absolute;
     background-color: rgb(0, 0, 0, 0.75);
-    border-radius: 32px;
+    border-radius: 18px;
     opacity: 0;
     transition: all 0.3s ease-in-out;
 }
@@ -478,13 +477,6 @@ footer ul {
         top: -98px;
     }
 
-    .greetings::after {
-        content: url(./img/oval.svg);
-        position: absolute;
-        left: 91%;
-        bottom: 11%;
-    }
-
     .hr {
         width: 708px;
         margin-bottom: 52px;
@@ -506,6 +498,8 @@ footer ul {
     }
 
     [class^="hov_links"] {
+        width: 345px;
+        height: min-content;
         bottom: -58px;
         background-color: transparent;
         opacity: 1;
@@ -542,6 +536,8 @@ footer ul {
         padding-bottom: 40px;
     }
 }
+
+/* max-width: 748px ------------------------------------------------ */
 
 @media (max-width: 748px) {
 
@@ -594,11 +590,6 @@ footer ul {
 
     h1::before {
         top: -400px;
-    }
-
-    .greetings::after {
-        left: 91%;
-        top: -2%;
     }
 
     .greetings p {
@@ -654,7 +645,10 @@ footer ul {
     }
     .examples {
         margin-bottom: 45px;
+        justify-content: center;
     }
+
+    
 
     .examples img {
         width: 100%;
