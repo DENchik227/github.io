@@ -10,8 +10,8 @@ section {
   max-width: 1110px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  grid-auto-flow: dense row;
   gap: 30px 24px; 
 }
 
@@ -19,24 +19,27 @@ section {
   padding: 32px;
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
+  color: $main-text-color-on-colored;
   border-radius: 8px;
   box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.247378);
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   gap: 16px;
-  color: $main-text-color-on-colored;
 
   &.bgcol_accent { background: $card-bgcol-accent url(./img/two_apostrophes.svg) no-repeat top right 80px;}
   &.bgcol-dark { background-color: $card-bgcol-dark; }
   &.bgcol-grau { background-color: $card-bgcol-grau; }
   &.bgcol-white {
-    background-color: $main-text-color-on-colored;
     color: $main-text-color-on-white;
+    background-color: $main-text-color-on-colored;
   }
   
   &.two_cells_vertically { grid-column-end: span 2; }
-  &.two_cells_horizontally { grid-row-end: span 2; }
+  &.two_cells_horizontally {
+    grid-row-end: span 2;
+    grid-column-start: -2;
+  }
 
   &__PersonData {
     width: 45px;
@@ -62,10 +65,10 @@ section {
     & cite,
     &__TrainingStage {
       width: max-content;
+      font-style: normal;
       position: absolute;
       right: 0;
       transform: translateX(100%);
-      font-style: normal;
     }
 
     & cite {
@@ -75,11 +78,11 @@ section {
     }
 
     &__TrainingStage {
+      margin: 0;
       font-size: 11px;
       line-height: 11px;
       bottom: 0;
       opacity: 0.5;
-      margin: 0;
     }
   }
 

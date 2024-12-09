@@ -1,0 +1,170 @@
+$bg-color: rgb(236, 219, 195);
+$contrasting-bg-color: rgb(184, 147, 119);
+$activ-color: #49606f;
+$border-color: rgb(29, 16, 12);
+$text-color: rgb(10, 12, 16);
+
+@import "header";
+
+:root {
+        font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: $bg-color;
+        color: $text-color;
+}
+
+.img_hero {
+        width: 592.48px;
+        height: 592.48px;
+        position: absolute;
+        top: 64px;
+        left: 730px;
+}
+
+.AboutUs {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        margin-bottom: 60px;
+
+        & {
+                & h2 {
+                        margin-left: 15px;
+                        grid-area: 1 / 1 / 2 / 5;
+                        margin-top: 10px;
+                        margin-bottom: 25px;
+                        font-size: 3rem;
+                        font-weight: 700;
+                }
+
+                & p {
+                        grid-area: 2 / 1 / 3 / 5;
+                        font-size: 1.5rem;
+                        margin-bottom: 53px;
+                }
+                & a {
+                        grid-area: 3 / 1 / 4 / span 2;
+                        margin: 0 15px;
+                        display: block;
+                        padding: 15px;
+                        font-size: 2rem;
+                        text-align: center;
+                        color: $text-color;
+                        text-decoration: none;
+                        background: $activ-color
+                                radial-gradient(circle farthest-side, rgba(12, 15, 33, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+                        border-radius: 16px;
+                        box-shadow: 5px 8px 12px 5px rgba(0, 0, 0, 0.15);
+                        transition: opacity 0.8 ease;
+                        &:hover {
+                                opacity: 0.9;
+                        }
+                }
+        }
+
+        & img {
+                grid-area: 1 / 2 / 5 / span 9;
+        }
+}
+
+.sonderangebot {
+        font-size: 3rem;
+        & h2 {
+                // display: inline;
+                // border: 1px solid transparent;
+                // border-image-source: url("../img/boom_style_2.png");
+                // border-image-slice: 40;
+                // border-image-repeat: round;
+                // border-image-width: 47px;
+        }
+}
+
+.menu {
+        position: relative;
+}
+.menu_page {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 33%;
+        height: auto;
+        &_1,
+        &_2,
+        &_3,
+        &_4,
+        &_5,
+        &_6 {
+                animation: menu_page_change 36s ease infinite both;
+                border-radius: 16px;
+        }
+
+        &_1 {
+                animation-delay: 0s;
+        }
+        &_2 {
+                animation-delay: 6s;
+        }
+        &_3 {
+                animation-delay: 12s;
+        }
+        &_4 {
+                animation-delay: 18s;
+        }
+        &_5 {
+                animation-delay: 24s;
+        }
+        &_6 {
+                animation-delay: 30s;
+        }
+
+        &.menu_page_2, &.menu_page_3, &.menu_page_6 {margin-top: 91px;}
+
+        &.menu_page_4, &.menu_page_5 {margin-top: 144.5px;}
+}
+.menu_position {
+        width: 175px;
+        border-radius: 50%;
+        border: 13px solid $border-color;
+        position: absolute;
+        &_1,
+        &_3,
+        &_5 {
+                left: 375px;
+        }
+        &_2,
+        &_4,
+        &_6 {
+                left: 560px;
+        }
+
+        &_1 {
+                top: 0;
+        }
+        &_2 {
+                top: 92.5px;
+        }
+        &_3 {
+                top: 185px;
+        }
+        &_4 {
+                top: 277.5px;
+        }
+        &_5 {
+                top: 370px;
+        }
+        &_6 {
+                top: 462.5px;
+        }
+}
+
+@keyframes menu_page_change {
+        0%,
+        16%,
+        100% {
+                opacity: 0;
+        }
+        3%,
+        14% {
+                opacity: 1;
+        }
+}

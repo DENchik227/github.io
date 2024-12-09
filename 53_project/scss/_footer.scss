@@ -1,0 +1,45 @@
+footer {
+    & >ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 40px;
+        margin-top: 12px;
+        margin-bottom: 48px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .logo {
+            font-weight: 500;
+            font-size: 1.25rem;
+            margin-left: 4px;
+        }
+        p {
+            display: inline;
+        }
+        ul {
+            gap: 16px;
+        }
+    }
+}
+
+.footer_links {
+    margin-top: 36px;
+    width: 170px;
+    h3 {
+        display: inline-block;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 110%;
+        color: $blue-gray-600;
+    }
+    .AG_body-M {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+    }
+}
