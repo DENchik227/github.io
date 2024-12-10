@@ -6,8 +6,10 @@ const nextButton = document.querySelector('.slider_button.next');
 let currentIndex = 0;
 
 function updateSlider() {
-    const offset = -currentIndex * 100; 
-    slider.style.transform = `translateX(${offset}%)`;
+    const cardWidth = slider.offsetWidth;
+    const gap = 32;
+    const offset = -(currentIndex * (cardWidth + gap));
+    slider.style.transform = `translateX(${offset}px)`;
 }
 
 prevButton.addEventListener('click', () => {

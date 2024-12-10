@@ -88,6 +88,9 @@ h1 {
     background: $fuchisa-600;
     border: 2px solid $fuchisa-600;
     border-radius: 26px;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 // Main ----------------------------------------------
@@ -278,6 +281,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(4, calc(100%));
     column-gap: 32px;
+    z-index: 2;
     .slider_button {
         position: absolute;
         top: 50%;
