@@ -1,0 +1,58 @@
+.burger_photo {
+  width: 1440px;
+  min-height: 1024px;
+  margin: 0 auto;
+  height: 720px;
+  padding: 100px;
+  padding-top: 181px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  color: #fff;
+  background: #080C15 url(burger.png) no-repeat center center;
+}
+.burger_photo h2 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 78px;
+}
+.burger_photo h2 span {
+  color: #CD292A;
+}
+.burger_photo p {
+  max-width: 536px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+}
+.burger_photo a {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 24px 40px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 18px;
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 96px;
+  background: #CD292A;
+  border-radius: 40px;
+}
+.burger_photo > * {
+  margin-bottom: 40px;
+}
+.burger_characteristics {
+  display: flex;
+  column-gap: 16px;
+  justify-content: start;
+}
+.burger_characteristics__text {
+  padding: 36px;
+  padding-left: 91px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #fff;
+  background: linear-gradient(94.19deg, rgba(255, 255, 255, 0.4) 8.76%, rgba(255, 255, 255, 0) 100%);
+  backdrop-filter: blur(6px);
+  border-radius: 50px 0 0 50px;
+}
