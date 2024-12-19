@@ -43,7 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
     const customSelects = document.querySelectorAll(".custom-select");
 
@@ -83,3 +82,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const burgerMenu = document.querySelector(".burger-menu");
+    const menuAndButtons = document.querySelector(".menu_and_buttons");
+
+    burgerMenu.addEventListener("click", () => {
+        menuAndButtons.classList.toggle("active");
+    });
+
+    document.addEventListener("click", (e) => {
+        if (!menuAndButtons.contains(e.target) && !burgerMenu.contains(e.target)) {
+            menuAndButtons.classList.remove("active");
+        }
+    });
+});

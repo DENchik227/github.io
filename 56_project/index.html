@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>teach</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,21 +12,22 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./main.css">
 
 </head>
 
 <body>
     <header class="container">
-        <div class="logo_and_menu">
+        <a class="logo" href="#"><img src="./img/svg/logo.svg" alt="A minimalistic logo with abstract shapes and a clean design, representing branding or identity.">teach</a>
+        <button class="burger-menu">&#9776;</button>
+        <div class="menu_and_buttons">
             <nav>
                 <ul>
-                    <li><a class="logo" href="#"><img src="./img/svg/logo.svg" alt="">teach</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Solutions</a></li>
                     <li><a href="#">Pricing</a></li>
-                    <li><button class="popover-trigger">Resources
+                    <li>
+                        <button class="popover-trigger">Resources
                             <div class="popover">
                                 <ul>
                                     <li>Resource 1</li>
@@ -35,103 +36,120 @@
                                     <li>Resource 4</li>
                                 </ul>
                             </div>
-                        </button></li>
+                        </button>
+                    </li>
                 </ul>
             </nav>
+            <div class="account">
+                <a href="#">Log In</a>
+                <a href="#">Sign Up Now</a>
+            </div>
         </div>
-        <div class="account"><a href="#">Log In</a><a href="#">Sign Up Now</a></div>
     </header>
+
     <main>
         <section class="worldwide_study grid_2_block container">
             <div>
                 <h1><span>
                     <svg width="196" height="23" viewBox="0 0 196 23" fill="none"
-                            xmlns="http://www.w3.org/2000/svg"><path
-                                d="M0.5 9.5C25.5 7.00002 116.5 2.13772 191 9.50002C152.328 9.50002 101.942 10.2445 69.5 18"
-                                stroke="#FB923C" stroke-width="10" stroke-linejoin="round" />
-                        </svg>
-                        Teach</span> students worldwide</h1>
-                <p class="worldwide_study__text">Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 9.5C25.5 7.00002 116.5 2.13772 191 9.50002C152.328 9.50002 101.942 10.2445 69.5 18"
+                        stroke="#FB923C" stroke-width="10" stroke-linejoin="round" />
+                </svg>Teach</span> students worldwide</h1>
+                <p class="worldwide_study__text">Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa
+                    tincidunt viverra lectus
                     pulvinar. Nunc ipsum est pellentesque turpis ultricies.</p>
                 <a href="#">Sign Up Now</a>
-                <a href="#"><img src="./img/svg/view_demo.svg" alt="">View Demo</a>
+                <a href="#"><img src="./img/svg/view_demo.svg" alt="A play button icon, often used to indicate watching a video or accessing a demonstration.">View Demo</a>
                 <div class="companies_row">
-                    <p>Trusted by<br>leading companies</p>
+                    <p>Trusted by <span class="line_breaker"> </span>leading companies</p>
                     <picture>
-                        <source media="(max-width: 760px)" srcset="./img/svg/companies_row_mobile.svg"
+                        <source media="(max-width: 1000px)" srcset="./img/svg/companies_row_mobile.svg"
                             type="image/svg+xml">
-                        <source media="(min-width: 760.01px)" srcset="./img/svg/companies_row_computer.svg"
+                        <source media="(min-width: 1000.01px)" srcset="./img/svg/companies_row_computer.svg"
                             type="image/svg+xml">
-                        <img src="./img/companies_row_mobile.png" alt="">
+                        <img src="./img/companies_row_mobile.png" alt="A row of icons in monochromatic design, representing various tools or services in a minimalist style.">
                     </picture>
                 </div>
             </div>
             <picture>
-                <source media="(max-width: 760px)" srcset="./img/teacher_and_student_mobile.png" type="image/png">
-                <source media="(min-width: 760.01px)" srcset="./img/teacher_and_student_computer.png" type="image/png">
-                <img src="./img/teacher_and_student_mobile.png" alt=""></picture>
+                <source media="(max-width: 1000px)" srcset="./img/teacher_and_student_mobile.png" type="image/png">
+                <source media="(min-width: 1000.01px)" srcset="./img/teacher_and_student_computer.png" type="image/png">
+                <img src="./img/teacher_and_student_mobile.png" alt="A visual representation of communication, featuring a woman holding a device and a professional in discussion, with chat bubbles floating around.">
+            </picture>
         </section>
-        
+
         <div class="tools_wrapper">
             <picture>
-                <source media="(max-width: 760px)" srcset="./img/second_section_bg_left_mobile.png" type="image/png">
-                <source media="(min-width: 760.01px)" srcset="./img/second_section_bg_left_computer.png"
+                <source media="(max-width: 1000px)" srcset="./img/second_section_bg_left_mobile.png" type="image/png">
+                <source media="(min-width: 1000.01px)" srcset="./img/second_section_bg_left_computer.png"
                     type="image/png">
                 <img class="second_section_bg_left" src="./img/second_section_bg_left_mobile.png">
             </picture>
             <section class="tools container">
-                <h2>All the <span>tools</span> that you need</h2>
+                <h2>All the <span><svg width="121" height="10" viewBox="0 0 196 23" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 9.5C25.5 7.00002 116.5 2.13772 191 9.50002C152.328 9.50002 101.942 10.2445 69.5 18"
+                        stroke="#FB923C" stroke-width="10" stroke-linejoin="round" />
+                </svg>tools</span> that you need</h2>
                 <p>Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.
                     Pharetra, eu imperdiet ipsum ultrices amet, dui sit suspendisse.</p>
                 <picture>
-                    <source media="(max-width: 760px)" srcset="./img/desktop_mobile.jpg" type="image/jpg">
-                    <source media="(min-width: 760.01px)" srcset="./img/desktop_computer.jpg" type="image/jpg">
-                    <img class="desktop" src="./img/desktop_mobile.jpg" alt="">
+                    <source media="(max-width: 1000px)" srcset="./img/desktop_mobile.jpg" type="image/jpg">
+                    <source media="(min-width: 1000.01px)" srcset="./img/desktop_computer.jpg" type="image/jpg">
+                    <img class="desktop" src="./img/desktop_mobile.jpg" alt="A browser interface showing a blurred background with a URL bar and navigation controls.">
                 </picture>
                 <svg class="vector_all" width="1300" height="78" viewBox="0 0 140 78" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path class="vector4L" d="M1 78C1 -34 548 49 548 0" stroke="#cbd5e1" stroke-dasharray="6 6"
+                    <path d="M1 78C1 -34 548 49 548 0" stroke="#cbd5e1" stroke-dasharray="6 6"
                         transform="translate(-395, 0)" />
-                    <path class="vector3L active" d="M0.999585 78C-2.00041 -4 413 49 413 0" stroke="#cbd5e1"
+                    <path class="active" d="M0.999585 78C-2.00041 -4 413 49 413 0" stroke="#cbd5e1"
                         stroke-dasharray="6 6" transform="translate(-262, 0)" />
-                    <path class="vector2L" d="M1 78C1 14 275 49 275 0" stroke="#cbd5e1" stroke-dasharray="6 6"
+                    <path d="M1 78C1 14 275 49 275 0" stroke="#cbd5e1" stroke-dasharray="6 6"
                         transform="translate(-124, 0)" />
-                    <path class="vector1L" d="M1 78C1 17 139 49 139 0" stroke="#cbd5e1" stroke-dasharray="6 6"
+                    <path d="M1 78C1 17 139 49 139 0" stroke="#cbd5e1" stroke-dasharray="6 6"
                         transform="translate(12, 0)" />
-                    <path class="vectorM" d="M1 0L1 75" stroke="#cbd5e1" stroke-dasharray="6 6"
+                    <path d="M1 0L1 75" stroke="#cbd5e1" stroke-dasharray="6 6" transform="translate(152, 0)" />
+                    <path d="M139 78C139 17 1 49 1 0" stroke="#cbd5e1" stroke-dasharray="6 6"
                         transform="translate(152, 0)" />
-                    <path class="vector1R" d="M139 78C139 17 1 49 1 0" stroke="#cbd5e1" stroke-dasharray="6 6"
+                    <path d="M275 78C275 14 1 49 1 0" stroke="#cbd5e1" stroke-dasharray="6 6"
                         transform="translate(152, 0)" />
-                    <path class="vector2R" d="M275 78C275 14 1 49 1 0" stroke="#cbd5e1" stroke-dasharray="6 6"
+                    <path d="M413 78C416 -4 1.00043 49 1.00043 0" stroke="#cbd5e1" stroke-dasharray="6 6"
                         transform="translate(152, 0)" />
-                    <path class="vector3R" d="M413 78C416 -4 1.00043 49 1.00043 0" stroke="#cbd5e1"
-                        stroke-dasharray="6 6" transform="translate(152, 0)" />
-                    <path class="vector4R" d="M548 78C548 -34 1 49 1 0" stroke="#cbd5e1" stroke-dasharray="6 6"
+                    <path d="M548 78C548 -34 1 49 1 0" stroke="#cbd5e1" stroke-dasharray="6 6"
                         transform="translate(152, 0)" />
                 </svg>
                 <div class="tools_row">
-                    <button class="vector4L"><img src="./img/app_icons/google_classroom.jpg" alt=""></button>
-                    <button class="vector3L active"><img src="./img/app_icons/google_drive.jpg" alt=""></button>
-                    <button class="vector2L"><img src="./img/app_icons/google_apps.jpg" alt=""></button>
-                    <button class="vector1L"><img src="./img/app_icons/google_camera.jpg" alt=""></button>
-                    <button class="vectorM"><img src="./img/app_icons/infinity_icon.jpg" alt=""></button>
-                    <button class="vector1R"><img src="./img/app_icons/google_calendar.jpg" alt=""></button>
-                    <button class="vector2R"><img src="./img/app_icons/buzzfeed.jpg" alt=""></button>
-                    <button class="vector3R"><img src="./img/app_icons/wifi_icon.jpg" alt=""></button>
-                    <button class="vector4R"><img src="./img/app_icons/google_cardboard.jpg" alt=""></button>
+                    <button><img src="./img/app_icons/google_classroom.jpg" alt="Google Classroom Icon: A green board with three user icons, symbolizing an online classroom."></button>
+                    <button class="active"><img src="./img/app_icons/google_drive.jpg" alt="Google Drive Icon: A triangular symbol with three sections, representing cloud storage."></button>
+                    <button><img src="./img/app_icons/google_apps.jpg" alt="Google Apps Icon: A blue square with a white G in the center, resembling a button."></button>
+                    <button><img src="./img/app_icons/google_camera.jpg" alt="Google Camera Icon: A black camera with a lens and a small indicator light, symbolizing photography."></button>
+                    <button><img src="./img/app_icons/infinity_icon.jpg" alt="Infinity Icon: A gradient infinity loop, symbolizing endless possibilities or continuity."></button>
+                    <button><img src="./img/app_icons/google_calendar.jpg" alt="Google Calendar Icon: A calendar page with the number 31, representing Google Calendar."></button>
+                    <button><img src="./img/app_icons/buzzfeed.jpg" alt="Buzzfeed Icon: A circle with a sharp upward arrow representing trends or growth."></button>
+                    <button><img src="./img/app_icons/wifi_icon.jpg" alt="Wi-Fi Icon: A symbol of radiating arcs, representing wireless internet connectivity."></button>
+                    <button><img src="./img/app_icons/google_cardboard.jpg" alt="Google Cardboard Icon: A cardboard-like virtual reality headset symbol.
+                        "></button>
                 </div>
             </section>
             <picture>
-                <source media="(max-width: 760px)" srcset="./img/second_section_bg_right_mobile.png" type="image/png">
-                <source media="(min-width: 760.01px)" srcset="./img/second_section_bg_right_computer.png"
+                <source media="(max-width: 1000px)" srcset="./img/second_section_bg_right_mobile.png" type="image/png">
+                <source media="(min-width: 1000.01px)" srcset="./img/second_section_bg_right_computer.png"
                     type="image/png">
                 <img class="second_section_bg_right" src="./img/second_section_bg_right_mobile.png">
             </picture>
         </div>
-        
+
         <section class="app_feature container grid_2_block">
             <article>
-                <h2>An <span>all-in-one app</span><br>that makes it easier</h2>
+                <h2>An <span><svg width="251" height="17" viewBox="0 0 196 23" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 9.5C25.5 7.00002 116.5 2.13772 191 9.50002C152.328 9.50002 101.942 10.2445 69.5 18"
+                        stroke="#FB923C" stroke-width="10" stroke-linejoin="round" />
+                </svg>all-in-one app</span><br>that makes it easier</h2>
                 <ul>
                     <li>Est et in pharetra magna adipiscing ornare aliquam.</li>
                     <li>Tellus arcu sed consequat ac velit ut eu blandit.</li>
@@ -140,10 +158,11 @@
                 <a class="find_more" href="#">Find more about the app</a>
             </article>
             <article class="app_feature__articles">
-                <picture> 
-                    <source media="(max-width: 760px)" srcset="./img/videodeodeo_mobile.jpg" type="image/jpg">
-                    <source media="(min-width: 760.01px)" srcset="./img/videodeodeo_computer.jpg" type="image/jpg">
-                    <img src="./img/videodeodeo_mobile.jpg" alt=""></picture>
+                <picture>
+                    <source media="(max-width: 1000px)" srcset="./img/videodeodeo_mobile.jpg" type="image/jpg">
+                    <source media="(min-width: 1000.01px)" srcset="./img/videodeodeo_computer.jpg" type="image/jpg">
+                    <img src="./img/videodeodeo_mobile.jpg" alt="A close-up of a person browsing a tablet, with design previews displayed on the screen. The play button overlay suggests interactive content.">
+                </picture>
                 <article class="advertising_card featured">
                     <mark class="badge">Featured</mark>
                     <h3>The map of mathematics</h3>
@@ -163,39 +182,41 @@
                     <a href="#">Take Lesson</a>
                 </article>
             </article>
-        </section> 
-        
+        </section>
+
         <section class="international_meetings container grid_2_block">
             <picture>
-                <source media="(max-width: 760px)" srcset="./img/meet_mobile.png" type="image/png">
-                <source media="(min-width: 760.01px)" srcset="./img/meet_computer.png" type="image/png">
-                <img src="./img/meet_mobile.png" alt="">
+                <source media="(max-width: 1000px)" srcset="./img/meet_mobile.png" type="image/png">
+                <source media="(min-width: 1000.01px)" srcset="./img/meet_computer.png" type="image/png">
+                <img src="./img/meet_mobile.png" alt="A grid of diverse scenes, including people studying, working, and celebrating milestones, portraying various lifestyles and activities.">
             </picture>
             <article class="international_meetings__text_block">
-                <h2>Meet international students &amp; teachers</h2>
-                <p>Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.</p>
+                <h2>Meet <span class="nowrap">inter<span><svg fill="none" viewBox="0 0 64 65" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" stroke="#FACC15" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m39.037 27.854 12.879-3.4509c1.3663-0.3661 2.822-0.1744 4.047 0.5328 1.225 0.7073 2.1189 1.8722 2.485 3.2384 0.3661 1.3663 0.1744 2.8221-0.5328 4.0471-0.7073 1.225-1.8722 2.1188-3.2385 2.4849l-38.637 10.353-11.869-13.384 7.7274-2.0705 6.532 3.7712 7.7274-2.0705-9.9829-16.65 7.7274-2.0705 15.134 15.27z"/><path d="m8 56.5h48"/></g></svg>na</span>tional</span> students &amp; teachers</h2>
+                <p>Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget
+                    commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna,
+                    faucibus aenean lorem faucibus integer.</p>
                 <a class="find_more" href="#">Explore teachers and students</a>
             </article>
         </section>
         <div class="metrics_wrapper">
             <section class="metrics container">
                 <article class="metrics_card">
-                    <img src="./img/svg/user_countries.png" alt="">
+                    <img src="./img/svg/user_countries.png" alt="The image shows a simple icon of a heart placed within a circular background. It suggests themes of care, love, or favorites, often used in interfaces for likes or emotional emphasis.">
                     <h3>195</h3>
                     <p>user countries</p>
                 </article>
                 <article class="metrics_card">
-                    <img src="./img/svg/valued_teachers.svg" alt="">
+                    <img src="./img/svg/valued_teachers.svg" alt="A diamond shaped badge symbolizing excellence, value or recognition.">
                     <h3>195</h3>
                     <p>valued teachers</p>
                 </article>
                 <article class="metrics_card">
-                    <img src="./img/svg/happy_students.svg" alt="">
+                    <img src="./img/svg/happy_students.svg" alt="An image of a graduation cap stacked on books, symbolizing education, learning, or achievements.">
                     <h3>195</h3>
                     <p>happy students</p>
                 </article>
             </section>
-        </div> 
+        </div>
         <div class="reviews__wrapper">
             <section class="reviews container">
                 <header>
@@ -215,22 +236,25 @@
                 </header>
                 <div class="reviews__slider">
                     <article class="reviews__card">
-                        <p>Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas
+                        <p>Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi
+                            maecenas
                             elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus
                             consectetur mi.</p>
                         <div class="person__data">
-                            <img src="./img/hellen_jummy.jpg" alt="">
+                            <img src="./img/hellen_jummy.jpg" alt="A woman outdoors, raising her arm with confidence, standing against a vibrant background.">
                             <p class="person__name">Hellen Jummy</p>
                             <p class="person__position">Financial Counselor</p>
                         </div>
                     </article>
-    
+
                     <article class="reviews__card">
-                        <p>Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra
-                            sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies dolor.
+                        <p>Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis
+                            viverra
+                            sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies
+                            dolor.
                         </p>
                         <div class="person__data">
-                            <img src="./img/ralph_edwards.jpg" alt="">
+                            <img src="./img/ralph_edwards.jpg" alt="A professional-looking individual wearing a suit, gazing directly at the camera with a neutral expression.">
                             <p class="person__name">Ralph Edwards</p>
                             <p class="person__position">Math Teacher</p>
                         </div>
@@ -239,37 +263,41 @@
                         <p>Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus,
                             amet, hac imperdiet. Tellus mi volutpat tellus, congue malesuada sit nisl donec a.</p>
                         <div class="person__data">
-                            <img src="./img/hellena_john.jpg" alt="">
+                            <img src="./img/hellena_john.jpg" alt="A stylish individual wearing a bright pink scarf, covering part of their face, with a neutral backdrop.">
                             <p class="person__name">Hellena John</p>
                             <p class="person__position">Psychology Student</p>
                         </div>
                     </article>
                     <article class="reviews__card">
                         <p>Sapien, sollicitudin et vitae id et laoreet sapien consectetur. Felis egestas egestas amet
-                            aliquam sit euismod. Pellentesque neque, sed ut volutpat. Ullamcorper in at nulla dignissim.</p>
+                            aliquam sit euismod. Pellentesque neque, sed ut volutpat. Ullamcorper in at nulla dignissim.
+                        </p>
                         <div class="person__data">
-                            <img src="./img/david_oshodi.jpg" alt="">
+                            <img src="./img/david_oshodi.jpg" alt="A young man in a casual white t-shirt, smiling in front of a home background.">
                             <p class="person__name">David Oshodi</p>
                             <p class="person__position">Manager</p>
                         </div>
                     </article>
                     <article class="reviews__card">
-                        <p>Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas
+                        <p>Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi
+                            maecenas
                             elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus
                             consectetur mi.</p>
                         <div class="person__data">
-                            <img src="./img/hellen_jummy.jpg" alt="">
+                            <img src="./img/hellen_jummy.jpg" alt="A woman outdoors, raising her arm with confidence, standing against a vibrant background.">
                             <p class="person__name">Hellen Jummy</p>
                             <p class="person__position">Financial Counselor</p>
                         </div>
                     </article>
-    
+
                     <article class="reviews__card">
-                        <p>Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis viverra
-                            sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies dolor.
+                        <p>Odio rhoncus ornare ut quam. Molestie vel duis quis scelerisque ut id. In tortor turpis
+                            viverra
+                            sagittis ultrices nisi, nec tortor. Vestibulum, ultrices ultricies neque, hac ultricies
+                            dolor.
                         </p>
                         <div class="person__data">
-                            <img src="./img/ralph_edwards.jpg" alt="">
+                            <img src="./img/ralph_edwards.jpg" alt="A professional-looking individual wearing a suit, gazing directly at the camera with a neutral expression.">
                             <p class="person__name">Ralph Edwards</p>
                             <p class="person__position">Math Teacher</p>
                         </div>
@@ -278,16 +306,17 @@
                         <p>Sagittis nunc egestas leo et malesuada urna risus. Morbi proin et cras aliquam. Diam tellus,
                             amet, hac imperdiet. Tellus mi volutpat tellus, congue malesuada sit nisl donec a.</p>
                         <div class="person__data">
-                            <img src="./img/hellena_john.jpg" alt="">
+                            <img src="./img/hellena_john.jpg" alt="A stylish individual wearing a bright pink scarf, covering part of their face, with a neutral backdrop.">
                             <p class="person__name">Hellena John</p>
                             <p class="person__position">Psychology Student</p>
                         </div>
                     </article>
                     <article class="reviews__card">
                         <p>Sapien, sollicitudin et vitae id et laoreet sapien consectetur. Felis egestas egestas amet
-                            aliquam sit euismod. Pellentesque neque, sed ut volutpat. Ullamcorper in at nulla dignissim.</p>
+                            aliquam sit euismod. Pellentesque neque, sed ut volutpat. Ullamcorper in at nulla dignissim.
+                        </p>
                         <div class="person__data">
-                            <img src="./img/david_oshodi.jpg" alt="">
+                            <img src="./img/david_oshodi.jpg" alt="A young man in a casual white t-shirt, smiling in front of a home background.">
                             <p class="person__name">David Oshodi</p>
                             <p class="person__position">Manager</p>
                         </div>
@@ -297,17 +326,19 @@
         </div>
         <section class="features container grid_2_block">
             <article>
-                <h2>All the cool features</h2>
-                <p class="features__text">Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et dolor eu donec maecenas
+                <h2>All the cool <span><svg width="121" height="10" viewBox="0 0 196 23" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.5 9.5C25.5 7.00002 116.5 2.13772 191 9.50002C152.328 9.50002 101.942 10.2445 69.5 18"
+                        stroke="#FB923C" stroke-width="10" stroke-linejoin="round" />
+                </svg>features</span></h2>
+                <p class="features__text">Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac. In et
+                    dolor eu donec maecenas
                     nulla. Cum sed orci, sit pellentesque quisque feugiat cras ullamcorper. Ultrices in amet,
                     ullamcorper non viverra a, neque orci.</p> <a class="find_more" href="#">View all the features</a>
             </article>
             <section>
-                <picture>
-                    <source media="(max-width: 760px)" srcset="./img/right_mobile.png" type="image/png">
-                    <source media="(min-width: 760.01px)" srcset="./img/right_computer.png" type="image/png">
-                    <img src="./img/right_mobile.png" alt="">
-                </picture>
+                <img src="./img/right_computer.png" alt="A layout combining a couple using a laptop, a professional working remotely, and a vibrant classroom environment.">
                 <article class="advertising_card popular">
                     <mark class="badge">Popular</mark>
                     <h3>Design for how people think</h3>
@@ -315,17 +346,13 @@
                     <a href="#">Take Lesson</a>
                 </article>
             </section>
-
-            
-
-
         </section>
 
         <div class="invitation_wrapper">
             <picture>
                 <source media="(max-width: 1200px)" srcset="./img/last_section_top_mobile.png" type="image/png">
                 <source media="(min-width: 1200.01px)" srcset="./img/last_section_left_computer.png" type="image/png">
-                <img src="./img/last_section_top_mobile.png" alt="">
+                <img src="./img/last_section_top_mobile.png">
             </picture>
             <section class="invitation">
                 <h2>Join a world of learning</h2>
@@ -336,7 +363,7 @@
             <picture>
                 <source media="(max-width: 1200px)" srcset="./img/last_section_bottom_mobile.png" type="image/png">
                 <source media="(min-width: 1200.01px)" srcset="./img/last_section_right_computer.png" type="image/png">
-                <img src="./img/last_section_bottom_mobile.png" alt="">
+                <img src="./img/last_section_bottom_mobile.png">
             </picture>
         </div>
 
@@ -344,7 +371,7 @@
     <div class="footer_wrapper">
         <footer class="container">
             <div class="footer_content">
-                <a class="logo" href="#"><img src="./img/svg/logo_on_dark_bg.svg" alt="">teach</a>
+                <a class="logo" href="#"><img src="./img/svg/logo_on_dark_bg.svg" alt="A minimalistic logo with abstract shapes and a clean design, representing branding or identity.">teach</a>
                 <ul>
                     <li>
                         <h3><a href="#">Product</a></h3>
@@ -398,7 +425,7 @@
                         <li><a href="#">Terms</a></li>
                         <li><a href="#">Privacy</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li class="custom-select__wrapper"><img src="./img/svg/world.svg" alt="">
+                        <li class="custom-select__wrapper"><img src="./img/svg/world.svg">
                             <div class="custom-select">
                                 <button class="select-button">EN</button>
                                 <ul class="select-options">
@@ -430,7 +457,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="accessibility"><a href="#"><img src="./img/svg/accessibility.svg" alt=""></a></li>
+                        <li class="accessibility"><a href="#"><img src="./img/svg/accessibility.svg" alt="An icon representing accessibility, with a person inside a circle. It symbolizes inclusivity or ease of use for everyone."></a></li>
                     </ul>
                 </div>
             </footer>
@@ -441,13 +468,3 @@
 <script src="script.js"></script>
 
 </html>
-
-<!-- vector4L
-                vector3L
-                vector2L
-                vector1L
-                vectorM
-                vector1R
-                vector2R
-                vector3R
-                vector4R -->

@@ -1,7 +1,7 @@
-# Project Break.io
+# Project teach.io
 
 ## Overview
-### This project is a web page dedicated to developing meditation skills and personal productivity.
+### This project is a responsive web application designed to provide a user-friendly interface with customizable features. It integrates modern web design practices and includes features like custom dropdown menus, sliders, and responsive layouts optimized for both desktop and mobile devices.
 
 ## Tech Stack
 ### HTML
@@ -14,17 +14,17 @@
 - Responsive design for mobile devices.
 - Basic global styles, including reset and fonts.
 
-### **SCSS (Sass)**
-- Modular styles.
+### **LESS**
+- Modular styles: Clean and intuitive UI built with scalable and reusable components.
 - Variables.
-- Mixins.
+- Mixins: Typography System: Predefined styles for consistent text formatting.
 
 ### JavaScript
 - **Comments slider**:
     - Slider control with "Back" and "Forward" buttons.
     - Slide switching animation.
 - **Mobile menu**:
-    - The menu button appears on screens smaller than 800px.
+    - The menu button appears on screens smaller than 920px.
     - Navigation menu display control.
 - **Grunt**:
     - Autoprefixer.
@@ -34,7 +34,7 @@
 - **Responsive Design**: Adaptive layout using media queries for seamless cross-device experience.
 - **Google Fonts**: Roboto.
 - **ChatGPT**: Generated an alternative text.
-- **SCSS Modules**: Modular styles with variables and mixins.
+- **LESS Modules**: Modular styles with variables and mixins.
 - **Autoprefixer**: Provides compatibility with different browsers and old versions.
 - **Minifier**: Reduces code size (for example, CSS, HTML or JavaScript), deleting gaps, comments and other unnecessary elements.
 - **Picture**: Images are optimized for loading on different screen sizes.
