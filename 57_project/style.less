@@ -1,35 +1,13 @@
 // Mixin and Variables --------------------------------------
-
 @white: #ffffff;
-// @black: #000;
-@red-600: #E11D48;
-@amber-400: #FBBF24;
-@yellow-400: #FACC15;
-// @yellow-200: #FEF08A;
-// @orange-600: #FB923C;
 @orange-700: #C2410C;
-// @green-100: #DCFCE7;
-// @green-800: #166534;
-@blue-100: #DBEAFE;
-@blue-200: #BFDBFE;
-@blue-300: #93C5FD;
-@blue-300: #60A5FA;
-// @blue-600: #2563EB;
-// @blue-800: #1E40AF;
-@green-500: #22C55E;
 @purple-100: #F3E8FF;
 @purple-400: #C084FC;
 @purple-600: #9333EA;
-@purple-800: #6B21A8;
 @purple-900: #581C87;
 @blue-gray-900: #0f172a;
-// @blue-gray-700: #334155;
 @blue-gray-600: #475569;
-// @blue-gray-500: #64748B;
 @blue-gray-400: #94A3B8;
-// @blue-gray-300: #cbd5e1;
-// @blue-gray-200: #e2e8f0;
-@blue-gray-100: #F1F5F9;
 @pink-700: #BE185D;
 
 .text_mixin(@fw: 400, @fz: 1rem, @lh: 100%) {
@@ -46,10 +24,6 @@
 h2 {
     .text_mixin(800, 3.5rem, 110%);
 }
-
-// .AG-Heading-3 {
-//     .text_mixin(800, 3rem, 110%);
-// }
 
 .AG-Heading-4 {
     .text_mixin(700, 2.5rem, 110%)
@@ -68,21 +42,12 @@ h2 {
 }
 
 .AG-Caption-M {
-    .text_mixin(700, 20px, 100%);
     letter-spacing: 3px;
     text-transform: uppercase;
+    .text_mixin(700, 20px, 100%);
 }
 
-// .AG-Subtittle-XL {
-//     .text_mixin(500, 1.25rem, 110%)
-// }
-
 // Button --------------------------------------------------------
-
-// .AG-Button-XL {
-//     letter-spacing: 0.5px;
-//     .text_mixin(700, 1.5rem, 1.5rem);
-// }
 
 .AG-Button-L {
     letter-spacing: 0.5px;
@@ -95,30 +60,7 @@ h2 {
     .text_mixin(500, 1rem, 1.5rem);
 }
 
-// .AG-Button-S {
-//     .text_mixin(400, 0.875rem, 140%);
-// }
-
-// .AG-Button-L,
-// .AG-Button-M,
-// .AG-Button-S,
-// .AG-Button-XL {
-//     text-decoration: none;
-
-//     &:hover {
-//         text-decoration: underline;
-//     }
-// }
-
 // Body --------------------------------------------------------
-
-// .AG-Body-XXL {
-//     .text_mixin(400, 1.5rem, 160%);
-// }
-
-// .AG-Body-XL {
-//     .text_mixin(400, 1.25rem, 180%);
-// }
 
 .AG-Body-M {
     .text_mixin (400, 1rem, 140%);
@@ -132,10 +74,6 @@ h2 {
     .text_mixin (400, 0.875rem, 140%);
 }
 
-// .AG-Body-XS {
-//     .text_mixin (400, 12px, 140%);
-// }
-
 // General --------------------------------------------------------
 
 * {
@@ -145,13 +83,19 @@ h2 {
 }
 
 :root {
+    --gap-length: 80px;
     font-family: "Roboto", sans-serif;
     font-weight: normal;
 }
 
+body {
+    overflow-x: hidden;
+    background-color: @blue-gray-900;
+}
+
 section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: var(--gap-length);
+    padding-bottom: var(--gap-length);
 }
 
 a {
@@ -173,38 +117,35 @@ li {
 .styles_app_layout {
     width: 100%;
     height: auto;
-    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
-
-    img {
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.07);
+   img {
         width: 100%;
         height: auto;
-        box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.07);
         border-radius: 20px;
+        box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.07);
     }
 }
 
 .link_with_arrow {
     .AG-Button-L;
+    padding: 16px 8px;
+    color: @white;
+    border-radius: 8px;
     display: inline-flex;
     gap: 16px;
-    padding: 16px 8px;
-    border-radius: 8px;
-    color: @white;
-
-    &::after {
+   &::after {
         content: "";
         width: 24px;
         height: 24px;
         background: url(./img/svg/arrow_to_right_white.svg) no-repeat center center;
     }
-
-    &:hover {
-        cursor: pointer;
+   &:hover {
         color: @purple-400;
         background-color: @blue-gray-600;
-        transform: scale(.90) rotate(-2deg);
         opacity: 0.9;
+        cursor: pointer;
+        transform: scale(.90) rotate(-2deg);
         transition: all 0.3s ease-in-out;
     }
 }
@@ -215,36 +156,28 @@ li {
 
 // Header ------------------------------------------------------
 
-body {
-    background-color: @blue-gray-900;
-}
-
-
 nav>ul {
     max-width: 1000px;
-    padding: 24px;
     margin: 24px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 24px;
+    position: relative;
     background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.07);
     border-radius: 20px;
-
-    a:not(.logo) {
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+   a:not(.logo) {
         .AG-Button-M;
         padding: 12px 8px;
         letter-spacing: 0.5px;
-        border-radius: 8px;
         color: @white;
-
-        &:hover {
-            cursor: pointer;
+        border-radius: 8px;
+       &:hover {
             color: @purple-400;
             background-color: @blue-gray-600;
+            cursor: pointer;
             transition: all 0.3s ease-in-out;
-
-        }
+       }
     }
 }
 
@@ -252,9 +185,9 @@ nav>ul {
 .account_buttons,
 .research_buttons {
     display: flex;
-    gap: 16px;
     justify-content: start;
     align-items: center;
+    gap: 16px;
 }
 
 .logo {
@@ -263,37 +196,66 @@ nav>ul {
     color: @white;
 }
 
-.account_buttons button {
-    .AG-Button-M;
-    padding: 12px 8px;
-    letter-spacing: 0.5px;
-    background-color: transparent;
-    border: none;
-    color: @white;
-    border-radius: 8px;
-
-    &:first-child:hover {
-        cursor: pointer;
-        color: @purple-400;
-        background-color: @blue-gray-600;
-        transform: scale(.90) rotate(-2deg);
-        opacity: 0.9;
-        transition: all 0.3s ease-in-out;
-    }
-
-    &:last-child {
-        background: @purple-600;
-        border: 2px solid @purple-600;
-
-        &:hover {
-            cursor: pointer;
-            background: lighten(@purple-600, 10%);
-            box-shadow: 0px 4px 10px rgba(128, 0, 255, 0.4);
-            border-color: lighten(@purple-600, 20%);
-            transform: scale(1.05) rotate(4deg);
+.account_buttons {
+    margin-left: auto;
+   button {
+        .AG-Button-M;
+        padding: 12px 8px;
+        letter-spacing: 0.5px;
+        color: @white;
+        background-color: transparent;
+        border: none;
+        border-radius: 8px;
+       &:first-child:hover {
+            color: @purple-400;
+            background-color: @blue-gray-600;
             opacity: 0.9;
+            cursor: pointer;
+            transform: scale(.90) rotate(-2deg);
             transition: all 0.3s ease-in-out;
         }
+       &:last-child {
+            background: @purple-600;
+            border: 2px solid @purple-600;
+           &:hover {
+                background: lighten(@purple-600, 10%);
+                border-color: lighten(@purple-600, 20%);
+                box-shadow: 0px 4px 10px rgba(128, 0, 255, 0.4);
+                opacity: 0.9;
+                cursor: pointer;
+                transform: scale(1.05) rotate(4deg);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.burger-menu {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+   span {
+        width: 100%;
+        height: 3px;
+        background: @white;
+        border-radius: 3px;
+        display: block;
+        transition: all 0.3s ease-in-out;
+    }
+   &.active span:nth-child(1) {
+        transform: translate(1px, 13px) rotate(45deg);
+    }
+   &.active span:nth-child(2) {
+        opacity: 0;
+    }
+   &.active span:nth-child(3) {
+        transform: translate(1px, -13px) rotate(-45deg);
     }
 }
 
@@ -301,43 +263,40 @@ nav>ul {
 
 .main_slogan {
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 32px;
-    align-items: center;
-
-    h1 {
+   h1 {
         .AG-Heading-1;
         color: @white;
         display: flex;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
-
-    &__underline {
+   &__underline {
         text-decoration: underline;
         text-decoration-color: @purple-400;
         text-underline-offset: 10px;
     }
-
-    &__upperline {
-        display: inline-block;
+   &__upperline {
         width: 196px;
         overflow: hidden;
         text-decoration: underline;
+        display: inline-block;
+        transform: translateX(-1px);
         text-decoration-color: @purple-400;
         text-underline-offset: -51px;
         text-decoration-skip-ink: none;
-        transform: translateX(-1px);
         direction: rtl;
     }
-
-    &__ampersant {
+   &__ampersant {
         color: @purple-600;
     }
-
-    p {
+   p {
         .AG-Body-L;
-        color: @white;
         text-align: center;
+        color: @white;
     }
 }
 
@@ -345,98 +304,82 @@ nav>ul {
     .AG-Button-L;
     padding: 16px 40px;
     letter-spacing: 0.5px;
+    color: @white;
     background-color: transparent;
     border: none;
-    color: @white;
     border-radius: 8px;
-
-    &:first-child {
+   &:first-child {
         background: @purple-600;
         border: 2px solid @purple-600;
-
-        &:hover {
-            cursor: pointer;
+       &:hover {
             background: lighten(@purple-600, 10%);
-            box-shadow: 0px 4px 10px rgba(128, 0, 255, 0.4);
             border-color: lighten(@purple-600, 20%);
-            transform: scale(1.05) rotate(-3deg);
+            box-shadow: 0px 4px 10px rgba(128, 0, 255, 0.4);
             opacity: 0.9;
+            cursor: pointer;
+            transform: scale(1.05) rotate(-3deg);
             transition: all 0.3s ease-in-out;
         }
     }
-
-    &:last-child {
+   &:last-child {
         border: 2px solid @white;
-
-        &:hover {
-            cursor: pointer;
+       &:hover {
             color: @purple-400;
             background-color: @blue-gray-600;
-            transform: scale(.90) rotate(3deg);
             opacity: 0.9;
+            cursor: pointer;
+            transform: scale(.90) rotate(3deg);
             transition: all 0.3s ease-in-out;
         }
     }
 }
 
 .companies {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
     color: @white;
-
-    h2 {
-        .AG-Heading-2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+   h2 {
         text-align: center;
     }
-
-    ul {
+   ul {
         display: flex;
         justify-content: center;
-        gap: 80px;
         flex-wrap: wrap;
-
-        li {
+        gap: var(--gap-length);
+       li {
             display: inline-flex;
             align-items: center;
             gap: 8px;
         }
-
-        h3 {
+       h3 {
             .AG-Heading-6
         }
     }
 }
 
 .reusable_section {
-    display: flex;
     color: @white;
+    display: flex;
     align-items: center;
-    gap: 80px;
-
-    h3 {
+    gap: var(--gap-length);
+   h3 {
         .AG-Caption-M;
         margin-bottom: 8px;
     }
-
-    .big_element h2 {
+   .big_element h2 {
         .AG-Heading-1;
         margin-bottom: 32px;
     }
-
-    .small_element h2 {
-        .AG-Heading-2;
+   .small_element h2 {
         margin-bottom: 32px;
-
-    }
-
-    p {
+   }
+   p {
         .AG-Body-L;
         margin-bottom: 32px;
     }
-
-    a {
+   a {
         .link_with_arrow;
     }
 }
@@ -446,16 +389,13 @@ nav>ul {
     .big_element {
         max-width: 800px;
     }
-
-    .small_element {
+   .small_element {
         width: 357px;
     }
-
-    span:first-child {
+   span:first-child {
         color: @purple-400;
     }
-
-    span:last-child {
+   span:last-child {
         border: 5px solid @orange-700;
     }
 }
@@ -465,8 +405,7 @@ nav>ul {
     .big_element {
         max-width: 750px;
     }
-
-    .small_element {
+   .small_element {
         width: 450px;
     }
 }
@@ -475,9 +414,9 @@ nav>ul {
     .small_element {
         width: 284px;
     }
-
-    span:last-child {
+   span:last-child {
         background-color: @pink-700;
+        border-color: @blue-gray-900;
     }
 }
 
@@ -486,39 +425,36 @@ nav>ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    column-gap: 16px;
-
-    &__wrapper {
-
-        background-color: @purple-900;
+    gap: 32px 16px;
+   &__wrapper {
+       background-color: @purple-900;
     }
-
-    &__testimonials {
+   &__testimonials {
         width: 400px;
-
-        h3:extend(.reusable_section h3) {}
-
-        h2:extend(.reusable_section .small_element h2) {}
-
-        .link_with_arrow {
+       h3:extend(.reusable_section h3) {}
+       h2:extend(.reusable_section .small_element h2) {
+            span {
+                text-decoration: underline;
+                text-decoration-color: @purple-400;
+                text-underline-offset: 5px;
+                text-decoration-skip-ink: none;
+            }
+        }
+       .link_with_arrow {
             .AG-Button-M;
         }
-
-    }
-
-    &>img {
+   }
+   &>img {
+        border-radius: 50px;
         box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
         filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.07));
-        border-radius: 50px;
     }
-
-    &__message {
+   &__message {
         width: 400px;
-
-        q {
+       q {
             .AG-Body-L;
-            display: inline-block;
             margin-bottom: 16px;
+            display: inline-block;
         }
     }
 }
@@ -527,19 +463,16 @@ nav>ul {
     display: grid;
     grid-template-columns: 64px 1fr;
     column-gap: 16px;
-
-    &__photo {
-        grid-area: 1 / 1 / 3 / 2;
+   &__photo {
         border-radius: 50%;
+        grid-area: 1 / 1 / 3 / 2;
     }
-
-    &__name {
+   &__name {
         .AG-Body-L;
-        align-self: self-end;
         font-style: normal;
+        align-self: self-end;
     }
-
-    &__position {
+   &__position {
         .AG-Body-M;
         font-style: normal;
         align-self: self-start;
@@ -551,31 +484,26 @@ nav>ul {
         margin-bottom: 24px;
         display: flex;
         justify-content: space-between;
-        gap: 32px;
         flex-wrap: wrap;
+        gap: 32px;
     }
-
-    h2 {
-        .AG-Heading-2;
+   h2 {
         color: @blue-gray-900;
     }
-
-    .link_with_arrow {
+   .link_with_arrow {
         .AG-Button-M;
         color: @purple-600;
         background-color: transparent;
         border: 2px solid transparent;
         align-items: center;
-
-        &::after {
+       &::after {
             background: url(./img/svg/arrow_to_right_purpule.svg) no-repeat center center;
         }
-
-        &:hover {
-            cursor: pointer;
+       &:hover {
             color: @purple-600;
             background-color: transparent;
             border: 2px solid @purple-600;
+            cursor: pointer;
         }
     }
 }
@@ -583,53 +511,47 @@ nav>ul {
 .card {
     width: 410px;
     position: relative;
-
-    &_container {
+   &_container {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 12px;
     }
-
-    img {
+   img {
         margin-bottom: 24px;
     }
-
-    span {
+   span {
         .AG-Body-S;
         padding: 2px 8px;
         color: @purple-900;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        z-index: 3;
         background: @purple-100;
         border-radius: 4px;
-        position: absolute;
-        left: 16px;
-        top: 16px;
-        z-index: 3;
     }
-
-    p {
+   p {
         .AG-Subtittle-M;
-        color: @blue-gray-900;
         margin-bottom: 4px;
-    }
-
-    h3 {
-        .AG-Heading-4;
         color: @blue-gray-900;
+    }
+   h3 {
+        .AG-Heading-4;
         margin-bottom: 16px;
+        color: @blue-gray-900;
     }
 }
 
 .hors_animation:hover .link_with_arrow,
 .explosion_animation:hover .link_with_arrow,
 .father_animation:hover .link_with_arrow {
-    animation: hors_animation 0.5s ease-out 2 alternate;
-    cursor: pointer;
     color: @purple-600;
     background-color: transparent;
     border: 2px solid @purple-600;
-
-    &:hover {
+    cursor: pointer;
+    animation: hors_animation 0.5s ease-out 2 alternate;
+   &:hover {
         color: @purple-600;
         background-color: transparent;
         border: 2px solid @purple-600;
@@ -640,8 +562,7 @@ nav>ul {
     0% {
         transform: translate(0, 0) rotate(0deg);
     }
-
-    90%,
+   90%,
     100% {
         transform: translate(100%, -100%) rotate(-15deg);
     }
@@ -655,40 +576,31 @@ nav>ul {
     0% {
         transform: translateX(0) translateY(0);
     }
-
-    25% {
+   25% {
         transform: translateX(20px) translateY(-100px) rotate(16deg);
     }
-
-    40% {
+   40% {
         transform: translateX(40px) translateY(0);
     }
-
-    55% {
+   55% {
         transform: translateX(60px) translateY(-70px) rotate(-12deg);
     }
-
-    65% {
+   65% {
         transform: translateX(80px) translateY(0);
     }
-
-    75% {
+   75% {
         transform: translateX(90px) translateY(-40px) rotate(8deg);
     }
-
-    80% {
+   80% {
         transform: translateX(100px) translateY(0);
     }
-
-    90% {
+   90% {
         transform: translateX(110px) translateY(-20px) rotate(-4deg);
     }
-
-    100% {
+   100% {
         transform: translateX(120px) translateY(0);
     }
 }
-
 
 .father_animation:hover .link_with_arrow {
     animation: father_animation 2s cubic-bezier(0.3, 1, 0.8, 1) 1 forwards;
@@ -698,19 +610,18 @@ nav>ul {
     0% {
         transform: translate(0, 0);
     }
-
-    20% {
+   20% {
         transform: translate(0, -50px);
     }
-
-    40% {
+   40% {
         transform: translate(0, -50px) rotate(15deg);
     }
-
-    100% {
+   100% {
         transform: translate(100%, 0) rotate(0);
     }
 }
+
+// Footer --------------------------------------------------------
 
 footer {
     main {
@@ -720,48 +631,39 @@ footer {
         justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 48px;
-
-        ul {
+       ul {
             width: 150px;
             display: flex;
-            flex-direction: column;
             align-items: start;
-
-            &>* {
+            flex-direction: column;
+           &>* {
                 padding-top: 12px;
                 padding-bottom: 12px;
             }
         }
     }
-
-    h3 {
+   h3 {
         .AG-Subtittle-M;
         color: @blue-gray-400;
         cursor: default;
-
     }
-
-    a {
+   a {
         .AG-Body-M;
         color: @blue-gray-900;
-
-    }
-
-    .logo {
-        color: @blue-gray-900;
+   }
+   .logo {
         width: 210px;
         margin-right: 0;
+        color: @blue-gray-900;
     }
-
-    footer {
+   footer {
         padding-top: 48px;
         padding-bottom: 48px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 16px;
-
-        ul {
+        row-gap: 16px;
+       ul {
             width: 184px;
             display: flex;
             gap: 16px;
@@ -769,6 +671,157 @@ footer {
     }
 }
 
+// Media -----------------------------------------------------------------
 
-// Пройтись postcss-sorting, а потом перекинуть все миксины в начало правил
-// После того как закончу проект, надо будет сохранить все миксины и цвета
+@media (max-width: 900px) {
+   .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+   .main_slogan {
+        h1 {
+            .AG-Heading-2;
+        }
+       &__upperline {
+            width: 154px;
+        }
+    }
+   .reusable_section .big_element h2,
+    h2 {
+        .AG-Heading-4;
+    }
+   .card {
+        width: calc((100% - 32px) / 2);
+       img {
+            width: 100%;
+            object-fit: fill;
+        }
+    }
+}
+
+@media (max-width: 770px) {
+   :root {
+        --gap-length: 48px;
+    }
+   br {
+        display: none;
+    }
+   .container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+   .menu,
+    .account_buttons {
+        position: absolute;
+        top: 94px;
+        z-index: 10;
+        background: @blue-gray-600 linear-gradient(167deg, rgba(8, 13, 23, 1) 0%, rgba(15, 23, 42, 1) 38%);
+        border-radius: 8px;
+        box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25), 0px 0px 15px rgba(0, 0, 0, 0.07);
+        justify-content: center;
+        flex-wrap: wrap;
+        transform-origin: center top;
+        animation: none;
+        transform: rotateX(90deg);
+       &.active {
+            animation: swing 2s linear 1 both normal;
+        }
+       &.reverse {
+            animation: swing 2s linear 1 both reverse;
+        }
+    }
+   .menu {
+        max-width: calc(100% - 194px);
+        padding: 30px;
+        left: 0;
+        gap: 16px;
+       [href] {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+   .account_buttons {
+        max-width: 194px;
+        padding: 16px;
+        right: 0;
+        gap: 8px;
+    }
+    @keyframes swing {
+         0% {
+             transform: rotateX(90deg);
+             filter: brightness(0);
+         }
+        20%,
+         40%,
+         60%,
+         80% {
+             transform: rotateX(0deg);
+             filter: brightness(1);
+         }
+        30% {
+             transform: rotateX(-70deg);
+             filter: brightness(1.3);
+         }
+        50% {
+             transform: rotateX(54deg);
+             filter: brightness(0.5);
+         }
+        70% {
+             transform: rotateX(-36deg);
+             filter: brightness(1.7);
+         }
+        90% {
+             transform: rotateX(18deg);
+             filter: brightness(0.9);
+         }
+        100% {
+             transform: rotateX(0deg);
+         }
+     }
+   .burger-menu {
+        margin-left: auto;
+        display: flex;
+    }
+   .companies ul {
+        gap: 48px;
+    }
+   .reusable_section {
+        text-align: center;
+        flex-direction: column-reverse;
+        gap: 48px;
+       h3 {
+            margin-bottom: 16px;
+        }
+       h2,
+        p {
+            margin-bottom: 32px;
+        }
+    }
+   .mobile_demonstration {
+        flex-direction: column;
+       &__testimonials {
+            text-align: center;
+        }
+    }
+   .card {
+        width: 410px;
+    }
+}
+
+@media (max-width: 480px) {
+   .main_slogan p {
+        .AG-Body-M;
+    }
+   .companies ul {
+        gap: 24px 27px;
+    }
+   .reusable_section p {
+        .AG-Body-M;
+    }
+   .card h3 {
+        .AG-Heading-6;
+   }
+    footer footer {
+        flex-direction: column;
+    }
+}

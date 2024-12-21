@@ -1,19 +1,19 @@
-# Project teach.io
+# Project Weeb
 
 ## Overview
-### This project is a responsive web application designed to provide a user-friendly interface with customizable features. It integrates modern web design practices and includes features like custom dropdown menus, sliders, and responsive layouts optimized for both desktop and mobile devices.
+### This project is a visually appealing, fully responsive website designed for a modern design firm. The project showcases an elegant layout with advanced UI/UX practices to deliver a seamless user experience across all devices. It highlights key features like responsive design, engaging animations, and intuitive navigation.
 
 ## Tech Stack
 ### HTML
-- Meta tags: for promotion in social networks
+- Meta tags: for promotion in social networks.
 - Header and navigation menu.
 - Main block with registration form.
-- Sections with description of features, user reviews and frequently asked questions (FAQ).
 
 ### CSS
 - Headers, buttons, forms.
 - Responsive design for mobile devices.
-- Basic global styles, including reset and fonts.
+- Basic global styles, including reset and fonts.CSS
+- Engaging animations for menu and button appearance.
 
 ### **LESS**
 - Modular styles: Clean and intuitive UI built with scalable and reusable components.
@@ -21,9 +21,6 @@
 - Mixins: Typography System: Predefined styles for consistent text formatting.
 
 ### JavaScript
-- **Comments slider**:
-    - Slider control with "Back" and "Forward" buttons.
-    - Slide switching animation.
 - **Mobile menu**:
     - The menu button appears on screens smaller than 920px.
     - Navigation menu display control.
@@ -34,6 +31,7 @@
 ## Key Features
 - **Responsive Design**: Adaptive layout using media queries for seamless cross-device experience.
 - **Google Fonts**: Roboto.
+- **Meta tags**: for promotion in social networks.
 - **ChatGPT**: Generated an alternative text.
 - **LESS Modules**: Modular styles with variables and mixins.
 - **Autoprefixer**: Provides compatibility with different browsers and old versions.
