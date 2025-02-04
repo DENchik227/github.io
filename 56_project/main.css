@@ -1236,6 +1236,7 @@ footer .request_demo::after {
     font-size: 3rem;
     line-height: 110%;
     color: #0f172a;
+    color: #FACC15;
     margin: 8px 0;
   }
   .metrics p {

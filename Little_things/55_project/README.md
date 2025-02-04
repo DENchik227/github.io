@@ -17,8 +17,3 @@ This is a simple project showcasing a visually appealing landing for a burger-th
     3. **Nesting**: LESS enables nested rules to reflect the structure of HTML, improving readability and reducing repetitive code.
     4. **Mixins**: Reusable blocks of styles can be created, such as gradients or button styles, which are applied across the project.
     5. **Functions**: LESS supports functions to generate dynamic styles.
-
-## How to Run
-
-1. Open `index.html` in your browser.
-2. Ensure all linked assets (CSS and images) are in the same directory.
