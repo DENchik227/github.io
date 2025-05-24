@@ -1,7 +1,0 @@
-@media (max-width:570px){
-    section{grid-template-columns: repeat(1, 1fr);}
-    .card.two_cells_vertically {
-        grid-column-end: span 1;
-        grid-row-end: span 2;
-    }
-} 
